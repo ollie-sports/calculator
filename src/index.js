@@ -1,5 +1,12 @@
+import Calculator from "./Calculator-typescript-hooks";
+
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import TestCasesWrapper from "./TestCasesWrapper";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <TestCasesWrapper>
+    <Calculator />
+  </TestCasesWrapper>,
+  document.getElementById("root")
+);
