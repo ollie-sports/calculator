@@ -35,7 +35,7 @@ export default function TestCaseWrapper(Calculator) {
     unmount();
   });
 
-  return (
+  return () => (
     <div>
       <Calculator />
       <div style={{ marginTop: 50 }}>
