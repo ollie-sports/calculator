@@ -1,4 +1,4 @@
-import Calculator from "./Calculator-js";
+import Calculator from "./Calculator-js-solution";
 
 import ReactDOM from "react-dom";
 import React from "react";
