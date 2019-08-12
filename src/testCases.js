@@ -62,5 +62,9 @@ export default [
   {
     inputs: ["-", 1, 1, "="],
     output: -11
+  },
+  {
+    inputs: ["-", 1, 1, "=", 1, 1],
+    output: 11
   }
 ];

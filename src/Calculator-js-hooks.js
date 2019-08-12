@@ -66,6 +66,6 @@ function doMath(val1, val2, operation) {
   } else if (operation === SYMBOL.multiply) {
     return val1 * val2;
   } else if (operation === SYMBOL.divide) {
-    return val1 / val2;
+    return Math.floor(val1 / val2); //This is an integer only calculator...
   }
 }
