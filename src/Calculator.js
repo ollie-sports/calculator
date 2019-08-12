@@ -38,37 +38,20 @@ export default class Calculator extends React.Component {
 
     if (typeof arg === "number") {
       if (unhandledPendingOperation) {
-        this.setState({
-          unhandledPendingOperation: undefined,
-          pendingOperation: unhandledPendingOperation,
-          previousValue: currentValue,
-          currentValue: arg
-        });
+        //Insert this.setState({}) call here
       } else {
-        this.setState({
-          currentValue: parseInt(currentValue.toString() + arg)
-        });
+        //Insert this.setState({}) call here
       }
     } else if (MATH_OPERATORS.includes(arg)) {
-      this.setState({
-        unhandledPendingOperation: arg
-      });
+      //Insert this.setState({}) call here
 
       if (previousValue !== undefined && pendingOperation !== undefined) {
-        this.setState({
-          currentValue: this.doMath(previousValue, currentValue, pendingOperation),
-          previousValue: undefined
-        });
+        //Insert this.setState({}) call here
       }
     } else if (arg === SYMBOL.equals) {
-      this.setState({
-        currentValue: this.doMath(previousValue, currentValue, pendingOperation),
-        previousValue: undefined,
-        unhandledPendingOperation: undefined,
-        pendingOperation: undefined
-      });
+      //Insert this.setState({}) call here
     } else if (arg === SYMBOL.clear) {
-      this.setState(INIT_STATE);
+      //Insert this.setState({}) call here
     }
   };
 
