@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  font-size: 125%;
+  display: flex;
+}
+
+body {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  margin: 0;
+}
+
+#root  {
+  display: flex;
+  flex: 1;
+  padding: 0;
+}
+
+.calculator {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+.calculator .buttons, .calculator .display {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.calculator .display {
+  background-color: #444;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  font-size: 2.25rem;
+}
+
+.buttons button {
+  flex: 1 1 25%;
+  border: solid 1px #ddd;
+  background-color: #eee;
+  font-size: 1.75rem;
+}
+
+button.clear, button.zero {
+  flex: 1 1 75%;
+}
+
+.buttons button:last-child {
+  background-color: orange;
+  color: #fff;
+}
+
+#tests {
+  position: fixed;
+  top: 0.45rem;
+  left: 0.45rem;
+  color: #999;
+  opacity: 0.75;
+}

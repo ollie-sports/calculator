@@ -36,11 +36,11 @@ export default function TestCaseWrapper(Calculator) {
   });
 
   return () => (
-    <div>
+    <>
       <Calculator />
-      <div style={{ marginTop: 50 }}>
+      <div id="tests">
         Test cases passing: {results.filter(a => a).length} / {results.length}
       </div>
-    </div>
+    </>
   );
 }
